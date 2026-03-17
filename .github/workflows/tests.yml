@@ -1,0 +1,25 @@
+name: tests
+
+on:
+  push:
+    branches:
+      - 'master-foobarbaz'
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    name: Tests
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v6
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: 8.4
+
+      - name: Install dependencies
+        run: composer install
+
+      - name: Execute tests
+        run: vendor/bin/phpunit

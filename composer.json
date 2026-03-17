@@ -1,0 +1,34 @@
+{
+	"name": "indiveo/indiveo_oembed_typo3",
+	"type": "typo3-cms-extension",
+	"version": "1.0.0",
+	"require": {
+		"php": "^8.2",
+		"typo3/cms-core": "^13.4 || ^14.1"
+	},
+	"autoload": {
+		"psr-4": {
+			"Indiveo\\IndiveoOembedTypo3\\": "Classes"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"Indiveo\\IndiveoOembedTypo3\\Tests\\": "Tests"
+		}
+	},
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "indiveo_oembed_typo3"
+		}
+	},
+	"require-dev": {
+		"typo3/testing-framework": "^9.4",
+		"laravel/pint": "^1.29"
+	},
+	"config": {
+		"allow-plugins": {
+			"typo3/class-alias-loader": true,
+			"typo3/cms-composer-installers": true
+		}
+	}
+}
