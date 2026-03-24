@@ -16,6 +16,15 @@
 			"Indiveo\\IndiveoOembedTypo3\\Tests\\": "Tests"
 		}
 	},
+	"scripts": {
+		"prepare-release": [
+			"@extension-create-libs",
+			"rm -rf .github",
+			"rm -rf Tests",
+			"rm .gitignore",
+			"rm phpunit.xml"
+		]
+	},
 	"extra": {
 		"typo3/cms": {
 			"extension-key": "indiveo_oembed_typo3"
