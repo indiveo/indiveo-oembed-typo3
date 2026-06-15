@@ -14,7 +14,7 @@ Met deze extensie kan TYPO3 Indiveo-media herkennen en weergeven als online medi
 | Component | Versie      |
 | --- |-------------|
 | PHP | 8.2+        |
-| TYPO3 | 13.4 - 14.1 |
+| TYPO3 | 13.4 - 14.3.3 |
 
 ## Installatie
 
